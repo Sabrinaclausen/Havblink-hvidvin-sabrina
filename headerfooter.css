@@ -94,6 +94,44 @@ header{
     display: none;
 }
 
+/*hero billede*/
+
+.hero-billede {
+    position: relative;
+    width: 100%;
+}
+  
+.hero-billede img {
+    width: 100%;
+    height: auto;
+}
+  
+.hero-tekst {
+    position: absolute;
+    bottom: 50px;  /* flyt op/ned */
+    left: 50px;    /* flyt til venstre/højre */
+    color: white;
+    z-index: 10;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+
+  
+.hero-tekst p {
+    line-height: 1.6;
+    margin: 0;
+    color: white;
+}
+
+.laptopbillede {
+    display: block;
+}
+  
+.mobilbillede {
+    display: none;
+}
+
 /*footer*/
 
 footer {
@@ -252,10 +290,20 @@ footer {
     }
 
 
-      /* Skjul laptop-menuen på ipad */
-      #laptopnav {
+    /* Skjul laptop-menuen på ipad */
+    #laptopnav {
         display: none;
     }
+
+    /*hero billede*/
+    .hero-tekst h1 {
+        font-size: 35px;
+      }
+
+    .hero-tekst p {
+        font-size: 12px;
+        color: white;
+      }
 
     /*footer*/
     .footer-container {
@@ -400,8 +448,21 @@ footer {
     }
 
 
-      /* Skjul laptop-menuen på mobil */
-      #laptopnav {
+    /* Skjul laptop-menuen på mobil */
+    #laptopnav {
+        display: none;
+    }
+
+    /*hero billede*/
+    .laptopbillede {
+        display: none;
+    }
+    
+    .mobilbillede {
+        display: block;
+    }
+
+    .hero-tekst p{
         display: none;
     }
 

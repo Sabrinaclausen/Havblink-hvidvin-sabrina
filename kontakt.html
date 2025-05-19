@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Public Sans">
+    <link rel="stylesheet" href="styleguide.css">
+    <link rel="stylesheet" href="headerfooter.css">
+</head>
+
+<body>
+    <header>
+
+        <!-- Navigation til computer -->
+        <div>
+            <a href="index.html"><img id="logo" src="images/logo.svg" alt="Havblink Hvidvin Logo"></a>
+        </div>
+        <nav id="laptopnav">
+            <div class="menu-item">
+                <a href="#">WEBSHOP</a>
+            </div>
+            <div class="menu-item">
+                    <a href="#">VORES VIN</a>
+                <div class="dropdown">
+                    <a href="voresudvalg.html">Vores udvalg</a>
+                    <a href="voreshistorie.html">Vores historie</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <a href="#">VINGUIDE</a>
+                <div class="dropdown">
+                    <a href="vinogmad.html">Vin og mad</a>
+                    <a href="vintyper.html">Vintyper</a>
+                    <a href="vinopbevaring.html">Vinopbevaring</a>
+                    <a href="vinetikette.html">Vinetikette</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <a href="vinsmagning.html">VINSMAGNING</a>
+            </div>
+            <div class="menu-item">
+                <a href="kontakt.html">KONTAKT</a>
+            </div>
+        </nav>
+
+    <!-- Navigation til mobil -->
+    <img id="burgericon" src="images/burgermenu.png" alt="Burger menu">
+
+    <nav id="mobilnav">
+        <a href="#">WEBSHOP</a>
+      
+        <div class="mobile-menu-item">
+          <a href="#" class="toggle-submenu">VORES VIN</a>
+          <div class="submenu">
+            <a href="voresudvalg.html">Vores udvalg</a>
+            <a href="voreshistorie.html">Vores historie</a>
+          </div>
+        </div>
+      
+        <div class="mobile-menu-item">
+          <a href="#" class="toggle-submenu">VINGUIDE</a>
+          <div class="submenu">
+            <a href="vinogmad.html">Vin og mad</a>
+            <a href="vintyper.html">Vintyper</a>
+            <a href="vinopbevaring.html">Vinopbevaring</a>
+            <a href="vinetikette.html">Vinetikette</a>
+          </div>
+        </div>
+      
+        <a href="vinsmagning.html">VINSMAGNING</a>
+        <a href="kontakt.html">KONTAKT</a>
+      </nav>
+
+    </header>
+
+    <main>
+        <div class="hero-billede">
+            <div>
+                <img class="laptopbillede" src="images/hero-forside.png" alt="Desktop billede">
+            </div>
+            <div>
+                <img class="mobilbillede" src="images/hero-forside-mobil.png" alt="Mobil billede">
+            </div>    
+            <div class="hero-tekst">
+                <h1>Kontakt</h1>
+                <p>Velkommen til Havblink Hvidvin. Her finder du håndlavede, <br>
+                økologiske vine, der afspejler naturen, stedet og det <br>
+                menneske, der har skabt dem. Udforsk vores vine, læs om <br>
+                vingården, eller kig forbi til en smagning.
+                </p>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo-footer.svg" alt="Havblink logo">
+            </div>
+              
+            <div class="footer-columns">
+                <div class="footer-column">
+                  <h4 id="overste-link"> LINKS</h4>
+                  <a href="voresudvalg.html">VORES UDVALG</a>
+                  <a href="voreshistorie.html">VORES HISTORIE</a>
+                  <a href="vinsmagning.html">VINSMAGNING</a>
+                  <a href="#">WEBSHOP</a>
+                </div>
+                <div class="footer-column">
+                  <h4>LINKS</h4>
+                  <a href="vinogmad.html">VIN OG MAD</a>
+                  <a href="vintyper.html">VINTYPER</a>
+                  <a href="#">VIN OPBEVARING</a>
+                  <a href="#">VINETIKETTE</a>
+                </div>
+                <div class="footer-column">
+                  <h4>KONTAKT</h4>
+                  <a href="mailto:kontakt@havblinkhvidvin.dk">kontakt@havblinkhvidvin.dk</a>
+                  <p>TÅSTEBJERGGYDEN 21,<br>5600 FAABORG</p>
+                  <p><a href="#">FIND VEJ</a></p>
+                </div>
+            </div>
+        </div>
+          
+        <div class="footer-bottom">
+            <h5>© 2025 ALLE RETTIGHEDER FORBEHOLDES</h5>
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        
+    </footer>
+
+ <!-- Script til computer nav -->
+    <script>
+        const burger = document.getElementById('burgericon');
+        const mobilnav = document.getElementById('mobilnav');
+      
+        burger.addEventListener('click', () => {
+          mobilnav.classList.toggle('active');
+        });
+      </script>
+
+<!-- script til mobil nav-->
+<script>
+    const toggles = document.querySelectorAll('.toggle-submenu');
+  
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault(); 
+        const parent = toggle.parentElement;
+        parent.classList.toggle('open');
+      });
+    });
+  </script>
+  
+</body>
+</html>
