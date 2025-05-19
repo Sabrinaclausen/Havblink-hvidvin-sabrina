@@ -112,8 +112,6 @@
   .vin-info h4 {
     margin: 0 0 8px 0;
   }
-  
-  
 
 
   /* Mobil side */
@@ -152,21 +150,19 @@
 
     /*vin-kort mobil*/
 
+    .vinsektion-top{
+        display: none;
+    }
+
     .vin-kort-wrapper {
         gap: 40px 20px;
         justify-content: center;
-        padding: 30px 10px;
+        padding: 10px 10px;
+        margin-top: 30px;
     }
     
     .vin-kort {
-        width: 120px;
-    }
-    
-    .vin-billede {
-        border: none;
-        box-shadow: none;
-        padding: 0;
-        background: transparent;
+        width: 140px;
     }
     
     .vin-info {
@@ -178,10 +174,6 @@
     
     .vin-info .knap {
         display: none;
-    }
-    
-      .vin-info h3 {
-        font-size: 14px;
     }
   
 }
