@@ -29,6 +29,18 @@ h3{
     font-family: 'playfair display';
 }
 
+h4{
+    font-size: 25px;
+    color: black;
+    font-family: 'playfair display';
+}
+
+h5{
+    font-size: 12px;
+    color: black;
+    font-family: 'Public Sans', sans-serif;
+}
+
 p{
     font-size: 15px;
     color: black;

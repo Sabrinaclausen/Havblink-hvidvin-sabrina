@@ -1,3 +1,4 @@
+/*header*/
 header{
     display:flex;
     justify-content:space-between;
@@ -38,9 +39,9 @@ header{
 .menu-item {
     position: relative;
     text-transform: uppercase;
-  }
+}
   
-  .dropdown {
+.dropdown {
     display: none;
     position: absolute;
     background-color: #B9AF9E;
@@ -48,26 +49,26 @@ header{
     padding: 10px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     flex-direction: column;
-  }
+}
   
-  .menu-item:hover .dropdown {
+.menu-item:hover .dropdown {
     display: flex;
-  }
+}
 
-  .dropdown {
+.dropdown {
     left: -10px; 
-  }
+}
 
-  .dropdown a {
+.dropdown a {
     position: relative;
     display: inline-block;
     color: black;
     text-decoration: none;
     font-size: 18px;
     font-family: "Public Sans";
-  }
+}
   
-  .dropdown a::after {
+.dropdown a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -76,25 +77,90 @@ header{
     width: 0%;
     background-color: black;
     transition: width 0.2s ease;
-  }
+}
   
-  .dropdown a:hover::after {
+.dropdown a:hover::after {
     width: 100%;
-  }
+}
 
 
 /*molib nav*/
 
 #burgericon {
     display: none;
+}
+  
+#mobilnav {
+    display: none;
+}
+
+/*footer*/
+
+footer {
+    background-color: #B9AF9E;
+    color: white;
+    font-family: 'Public Sans', sans-serif;
+    padding: 20px 60px 20px;
+    font-weight: lighter;
+    font-size: 16px;
   }
   
-  #mobilnav {
-    display: none;
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-right: 100px;
+  }
+  
+  .footer-logo img {
+    max-height: 200px;
+    padding-left: 100px;
+  }
+  
+  .footer-columns {
+    display: flex;
+    gap: 100px;
+    padding-top: 40px;
+  }
+  
+  .footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer-column a, .footer-column p {
+    display: block;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 6px;
+  }
+  
+  .footer-column a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid black;
+    
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: black;
+  }
+  
+  .social-icons a img {
+    width: 18px;
+    margin-left: 12px;
   }
 
+
 /*ipad side*/
-  @media screen and (max-width: 760px) {
+@media screen and (max-width: 760px) {
     
     #burgericon {
         display: block;
@@ -106,8 +172,13 @@ header{
         z-index: 1100;
         cursor: pointer;
       }
+
+    #logo {
+        margin-left: 10px;
+    }
     
-      #mobilnav {
+    
+    #mobilnav {
         flex-direction: column;
         background-color: #B9AF9E;
         position: absolute;
@@ -118,25 +189,25 @@ header{
         padding: 20px;
         z-index: 1000;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      }
+    }
 
-      #mobilnav a{
+    #mobilnav a{
         padding: 10px 0;
         color: black;
         text-decoration: none;
         font-size: 18px;
         font-family: "Public Sans", sans-serif;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-      }
+    }
     
-      #mobilnav.active {
+    #mobilnav.active {
         display: flex;
-      }
+    }
 
-      .toggle-submenu::after {
+    .toggle-submenu::after {
         content: "▼";
         font-size: 14px;
-      }
+    }
 
 
     .mobile-menu-item {
@@ -184,13 +255,65 @@ header{
       /* Skjul laptop-menuen på ipad */
       #laptopnav {
         display: none;
+    }
+
+    /*footer*/
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .footer-logo {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
       }
+
+    .footer-logo img {
+        max-height: 150px;
+        padding-left: 0px;
+        padding-top: 0px;
+        display: block;
+    }
+    
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    
+    .footer-column {
+        text-align: center;
+    }
+    
+    #overste-link {
+        margin-top: -30px;
+        margin-bottom: 0px;
+        padding: 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding-top: 20px;
+    }
+    
+    .social-icons a img {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
 }
 
 
 /*mobil side*/
 @media screen and (max-width: 430px) {
     
+    /*header*/
+
     #burgericon {
         display: block;
         width: 50px;
@@ -200,12 +323,12 @@ header{
         right: 20px;
         z-index: 1100;
         cursor: pointer;
-      }
-      #logo {
+    }
+    #logo {
         margin-left: -20px;
-      }
+    }
 
-      #mobilnav {
+    #mobilnav {
         flex-direction: column;
         background-color: #B9AF9E;
         position: absolute;
@@ -216,25 +339,25 @@ header{
         padding: 20px;
         z-index: 1000;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      }
+    }
 
-      #mobilnav a{
+    #mobilnav a{
         padding: 10px 0;
         color: black;
         text-decoration: none;
         font-size: 18px;
         font-family: "Public Sans", sans-serif;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-      }
+    }
     
-      #mobilnav.active {
+    #mobilnav.active {
         display: flex;
-      }
+    }
 
-      .toggle-submenu::after {
+    .toggle-submenu::after {
         content: "▼";
-        font-size: 14px;
-      }
+        font-size: 12px;
+    }
 
 
     .mobile-menu-item {
@@ -252,7 +375,6 @@ header{
         border: none;
         width: 100%;
         text-align: left;
-        font-size: 16px;
         font-family: "Public Sans";
         text-transform: uppercase;
         cursor: pointer;
@@ -266,7 +388,6 @@ header{
     }
     
     .submenu a {
-        font-size: 14px;
         padding: 10px 0;
         color: black;
         text-decoration: none;
@@ -282,5 +403,54 @@ header{
       /* Skjul laptop-menuen på mobil */
       #laptopnav {
         display: none;
+    }
+
+    /*footer*/
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .footer-logo {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
       }
+
+    .footer-logo img {
+        max-height: 150px;
+        padding-left: 0px;
+        padding-top: 0px;
+        display: block;
+    }
+    
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    
+    .footer-column {
+        text-align: center;
+    }
+    
+    #overste-link {
+        margin-top: -30px;
+        margin-bottom: 0px;
+        padding: 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding-top: 20px;
+    }
+    
+    .social-icons a img {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
 }
