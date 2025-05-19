@@ -1,0 +1,187 @@
+/*fifty-fifty section*/
+.fifty-fifty {
+    background-color: #fefefe;
+    padding: 60px 20px 60px 100px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    margin: 100px 60px 100px 60px;
+
+  }
+  
+  .fifty-fifty-indhold {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 10px;
+  }
+  
+  .fifty-fifty-indhold .tekst {
+    flex: 1;
+  }
+  
+  .fifty-fifty-indhold .tekst h2 {
+    margin-bottom: 20px;
+  }
+  
+  .fifty-fifty-indhold .tekst p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+
+  .fifty-fifty-indhold .billede {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100%;
+  }
+  
+  .fifty-fifty-indhold .billede img {
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /*vin-kort*/
+  .vinsektion {
+    padding: 0; 
+  }
+  
+  .vinsektion-top {
+    background-color: #B9AF9E;
+    padding: 60px 20px 80px;
+    text-align: center;
+    padding-bottom: 200px;
+  }
+  
+  .vinsektion-top h2 {
+    margin-bottom: 15px;
+  }
+  
+  .vinsektion-top p {
+    line-height: 1.6;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .vinsektion-bund {
+    padding: 0 20px 60px;
+  }
+  
+  .vin-kort-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: -150px;
+  }
+  
+  .vin-kort {
+    width: 160px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #aaa;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .vin-kort:hover {
+    transform: scale(1.05);
+    background-color: #D9D2C3; /* hover-baggrund */
+  }
+  
+  .vin-billede {
+    padding: 10px;
+  }
+  
+  .vin-billede img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .vin-info {
+    padding: 10px 0;
+  }
+  
+  .vin-info h4 {
+    margin: 0 0 8px 0;
+  }
+  
+  
+
+
+  /* Mobil side */
+@media screen and (max-width: 430px) {
+    
+    /*fifty-fifty section mobil*/
+    .fifty-fifty-indhold {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        padding: 50px 20px;
+    }
+    
+    .fifty-fifty-indhold .billede {
+        order: 1;
+        width: 100%;
+    }
+    
+    .fifty-fifty-indhold .billede img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        box-shadow: none;
+    }
+    
+    .fifty-fifty-indhold .tekst {
+        order: 2;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .fifty-fifty {
+        padding: 20px;
+        margin: 100px 20px;
+    }
+
+    /*vin-kort mobil*/
+
+    .vin-kort-wrapper {
+        gap: 40px 20px;
+        justify-content: center;
+        padding: 30px 10px;
+    }
+    
+    .vin-kort {
+        width: 120px;
+    }
+    
+    .vin-billede {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        background: transparent;
+    }
+    
+    .vin-info {
+        position: static;
+        opacity: 1;
+        background: none;
+        padding: 10px 0 0;
+    }
+    
+    .vin-info .knap {
+        display: none;
+    }
+    
+      .vin-info h3 {
+        font-size: 14px;
+    }
+  
+}
