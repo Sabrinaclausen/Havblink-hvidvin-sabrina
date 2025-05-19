@@ -1,0 +1,128 @@
+header{
+    display:flex;
+    justify-content:space-between;
+    font-family: "Public Sans";
+    background-color: #B9AF9E;
+    padding: 2px 50px;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+}
+
+#logo {
+    height: 100px;
+    padding: 0; 
+    align-items: flex-start;
+    z-index: 1000;
+}
+    
+#laptopnav {
+    display: flex;
+    background-color: #B9AF9E;
+    gap: 80px;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: lighter;
+    z-index: 1000;    
+}
+#laptopnav a {
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-family: "Public Sans";
+    color: black;
+    font-size: 16px;
+}
+
+/* Dropdown */
+.menu-item {
+    position: relative;
+    text-transform: uppercase;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #B9AF9E;
+    min-width: 140px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    flex-direction: column;
+  }
+  
+  .menu-item:hover .dropdown {
+    display: flex;
+  }
+
+  .dropdown {
+    left: -10px; 
+  }
+
+  .dropdown a {
+    position: relative;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Public Sans";
+  }
+  
+  .dropdown a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1.5px;
+    width: 0%;
+    background-color: black;
+    transition: width 0.2s ease;
+  }
+  
+  .dropdown a:hover::after {
+    width: 100%;
+  }
+
+
+/*molib nav*/
+#mobilnav{
+    display: none;
+}
+/* burger */
+#burgericon{
+    display: none;
+}
+
+
+/*mobil side*/
+@media screen and (max-width: 430px) {
+    #logo {
+        display: none;
+    }
+    #laptopnav{
+        display: none;
+  
+    }
+    #logo2{
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 20%;
+        margin: 0;
+        z-index: 15;
+        
+    }
+    
+    #burgericon{
+        display: block;
+        width: 11%;
+        margin-top: 5px;
+        margin-right: 5px;
+        color: white;
+    } 
+    header{
+        position: absolute;
+        height: auto;
+        z-index: 10;
+    }
+}
