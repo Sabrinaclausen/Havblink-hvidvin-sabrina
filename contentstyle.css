@@ -228,14 +228,17 @@
 /*galleri*/
 .billedgalleri {
     padding: 40px 20px;
-    background-color: #fefefe;
+    margin: 50px 0;
   }
   
   .galleri-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+    gap: 20px;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
   }
   
   .galleri-wrapper img {
@@ -244,6 +247,7 @@
     object-fit: cover;
     border-radius: 4px;
     flex-shrink: 0;
+    scroll-snap-align: center;
   }
 
 
@@ -379,6 +383,19 @@
     scroll-snap-align: center;
   }
 /*galleri mobil*/
+.galleri-wrapper {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px;
+  }
 
+  .galleri-wrapper img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    scroll-snap-align: center;
+  }
 
 }
