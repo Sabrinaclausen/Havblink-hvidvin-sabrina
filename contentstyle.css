@@ -5,73 +5,137 @@
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
     margin: 100px 60px 100px 60px;
 
-  }
+}
   
-  .fifty-fifty-indhold {
+.fifty-fifty-indhold {
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
     gap: 10px;
-  }
+}
   
-  .fifty-fifty-indhold .tekst {
+.fifty-fifty-indhold .tekst {
     flex: 1;
-  }
+}
   
-  .fifty-fifty-indhold .tekst h2 {
+.fifty-fifty-indhold .tekst h2 {
     margin-bottom: 20px;
-  }
+}
   
-  .fifty-fifty-indhold .tekst p {
+.fifty-fifty-indhold .tekst p {
     line-height: 1.6;
     margin-bottom: 20px;
     padding-right: 20px;
-  }
+}
 
-  .fifty-fifty-indhold .billede {
+.fifty-fifty-indhold .billede {
     flex: 1;
     display: flex;
     justify-content: center; 
     align-items: center;
     height: 100%;
+}
+  
+.fifty-fifty-indhold .billede img {
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/*fifty-fifty venstre*/
+
+.fifty-fifty-venstre {
+    padding: 60px 100px 60px 20px; /* venstre: 20px, højre: 100px */
+    background-color: #fefefe;
+    padding: 60px 100px 60px 20px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    margin: 100px 60px;
+}
+
+.fifty-fifty-indhold-venstre {
+    display: flex;
+    flex-direction: row; /* billede til venstre, tekst til højre */
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
   }
   
-  .fifty-fifty-indhold .billede img {
+  .fifty-fifty-indhold-venstre .billede {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fifty-fifty-indhold-venstre .billede img {
     max-height: 100%;
     width: auto;
     height: auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
-
-  /*vin-kort*/
-  .vinsektion {
-    padding: 0; 
+  
+  .fifty-fifty-indhold-venstre .tekst-hojre {
+    flex: 1;
   }
   
-  .vinsektion-top {
+  .fifty-fifty-indhold-venstre .tekst-hojre h2 {
+    margin-bottom: 20px;
+  }
+  
+  .fifty-fifty-indhold-venstre .tekst-hojre p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+
+/*vindruert*/
+
+  .vinpunkt {
+    position: relative;
+    padding-left: 30px; /* plads til ikonet */
+  }
+  
+  .vinpunkt::before {
+    content: "🍇"; /* eller brug fx ✓, ✦, ➤ – alt efter stil */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+/*vin-kort*/
+.vinsektion {
+    padding: 0; 
+}
+  
+.vinsektion-top {
     background-color: #B9AF9E;
     padding: 60px 20px 80px;
     text-align: center;
     padding-bottom: 200px;
-  }
+}
   
-  .vinsektion-top h2 {
+.vinsektion-top h2 {
     margin-bottom: 15px;
-  }
+}
   
-  .vinsektion-top p {
+.vinsektion-top p {
     line-height: 1.6;
     max-width: 500px;
     margin: 0 auto;
-  }
+}
   
-  .vinsektion-bund {
+.vinsektion-bund {
     padding: 0 20px 60px;
-  }
+}
   
-  .vin-kort-wrapper {
+.vin-kort-wrapper {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -79,101 +143,242 @@
     max-width: 1200px;
     margin: 0 auto;
     margin-top: -150px;
-  }
+}
   
-  .vin-kort {
+.vin-kort {
     width: 160px;
     text-align: center;
     background-color: white;
     border: 1px solid #aaa;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
-  }
+}
   
-  .vin-kort:hover {
+.vin-kort:hover {
     transform: scale(1.05);
     background-color: #D9D2C3; /* hover-baggrund */
-  }
+}
   
-  .vin-billede {
+.vin-billede {
     padding: 10px;
-  }
+}
   
-  .vin-billede img {
+.vin-billede img {
     width: 100%;
     height: auto;
     object-fit: contain;
-  }
+}
   
-  .vin-info {
+.vin-info {
     padding: 10px 0;
+}
+  
+.vin-info h4 {
+    margin: 0 0 8px 0;
+}
+
+.banner-billede{
+   padding: 50px 0;
+}
+
+/*fakta boks*/
+.fakta-boks-sektion {
+    background-color: #B9AF9E;
+    padding: 60px 20px;
+    margin-top: 150px;
   }
   
-  .vin-info h4 {
-    margin: 0 0 8px 0;
+  .fakta-boks-indhold {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
   }
+  
+  .fakta-boks-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .fakta-boks {
+    padding: 30px 60px;
+    flex: 1;
+    max-width: 300px;
+    border: none;
+    padding: 30px 20px;
+    flex: 1;
+    max-width: 300px;
+  }
+
+  .fakta-boks:nth-child(2) {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+  
+  .fakta-boks h3 {
+    margin-bottom: 10px;
+  }
+  
+  .fakta-boks p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+/*galleri*/
+.billedgalleri {
+    padding: 40px 20px;
+    background-color: #fefefe;
+  }
+  
+  .galleri-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .galleri-wrapper img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
 
 
   /* Mobil side */
 @media screen and (max-width: 430px) {
     
-    /*fifty-fifty section mobil*/
-    .fifty-fifty-indhold {
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
-        padding: 50px 20px;
-    }
+/*fifty-fifty section mobil*/
+.fifty-fifty-indhold {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 50px 20px;
+}
     
-    .fifty-fifty-indhold .billede {
-        order: 1;
-        width: 100%;
-    }
+.fifty-fifty-indhold .billede {
+    order: 1;
+    width: 100%;
+}
     
-    .fifty-fifty-indhold .billede img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        box-shadow: none;
-    }
+ .fifty-fifty-indhold .billede img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: none;
+}
     
-    .fifty-fifty-indhold .tekst {
-        order: 2;
-        padding: 0;
-        width: 100%;
-    }
+.fifty-fifty-indhold .tekst {
+    order: 2;
+    padding: 0;
+    width: 100%;
+}
     
-    .fifty-fifty {
-        padding: 20px;
-        margin: 100px 20px;
-    }
+.fifty-fifty {
+    padding: 20px;
+    margin: 100px 20px;
+}
 
-    /*vin-kort mobil*/
+/*fifty-fifty venstre section mobil*/
+.fifty-fifty-indhold-venstre {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 50px 20px;
+}
+    
+.fifty-fifty-indhold-venstre .billede {
+    order: 1;
+    width: 100%;
+}
+    
+ .fifty-fifty-indhold-venstre .billede img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: none;
+}
+    
+.fifty-fifty-indhold-venstre .tekst-hojre {
+    order: 2;
+    padding: 0;
+    width: 100%;
+}
+    
+.fifty-fifty-venstre {
+    padding: 20px;
+    margin: 50px 20px;
+}
 
-    .vinsektion-top{
-        display: none;
-    }
+/*vin-kort mobil*/
 
-    .vin-kort-wrapper {
-        gap: 40px 20px;
-        justify-content: center;
-        padding: 10px 10px;
-        margin-top: 30px;
-    }
+.vinsektion-top{
+    display: none;
+}
+
+.vin-kort-wrapper {
+    gap: 40px 20px;
+    justify-content: center;
+    padding: 10px 10px;
+    margin-top: 30px;
+}
     
-    .vin-kort {
-        width: 140px;
-    }
+.vin-kort {
+    width: 140px;
+}
     
-    .vin-info {
-        position: static;
-        opacity: 1;
-        background: none;
-        padding: 10px 0 0;
-    }
+.vin-info {
+    position: static;
+    opacity: 1;
+    background: none;
+    padding: 10px 0 0;
+}
     
-    .vin-info .knap {
-        display: none;
-    }
-  
+.vin-info .knap {
+    display: none;
+}
+
+.banner-billede{
+    display: none;
+ }
+ 
+/*fakta boks mobil*/
+.fakta-boks-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 0 50px;
+  }
+
+  .fakta-boks {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .fakta-boks:nth-child(2) {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+  }
+  .galleri-wrapper {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px;
+  }
+
+  .galleri-wrapper img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    scroll-snap-align: center;
+  }
+/*galleri mobil*/
+
+
 }
