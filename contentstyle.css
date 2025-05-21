@@ -48,16 +48,15 @@
 /*fifty-fifty venstre*/
 
 .fifty-fifty-venstre {
-    padding: 60px 100px 60px 20px; /* venstre: 20px, højre: 100px */
+    padding: 60px 100px 60px 20px; 
     background-color: #fefefe;
-    padding: 60px 100px 60px 20px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
     margin: 100px 60px;
 }
 
 .fifty-fifty-indhold-venstre {
     display: flex;
-    flex-direction: row; /* billede til venstre, tekst til højre */
+    flex-direction: row; 
     align-items: center;
     justify-content: center;
     max-width: 1200px;
@@ -93,7 +92,7 @@
     padding-right: 20px;
   }
 
-/*vindruert*/
+/*vindruer*/
 
   .vinpunkt {
     position: relative;
@@ -108,6 +107,95 @@
     font-size: 18px;
     line-height: 1.6;
   }
+
+
+/*Mad og vin fifty-fifty venstre*/
+
+.vinogmad-venstre {
+    padding: 10px 100px 10px 20px; 
+    margin: 10px 60px;
+}
+
+.vinogmad-indhold-venstre {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+  }
+  
+  .vinogmad-indhold-venstre .billede {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .vinogmad-indhold-venstre .billede img {
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+  
+  .vinogmad-indhold-venstre .tekst-hojre {
+    flex: 1;
+  }
+  
+  .vinogmad-indhold-venstre .tekst-hojre h2 {
+    margin-bottom: 20px;
+  }
+  
+  .vinogmad-indhold-venstre .tekst-hojre p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+
+/* Vin og mad fifty-fifty section*/
+.vinogmad {
+    padding: 10px 20px 10px 100px;
+    margin: 10px 60px 10px 60px;
+
+}
+  
+.vinogmad-indhold {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 10px;
+}
+  
+.vinogmad-indhold .tekst {
+    flex: 1;
+}
+  
+.vinogmad-indhold .tekst h2 {
+    margin-bottom: 20px;
+}
+  
+.vinogmad-indhold .tekst p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+.vinogmad-indhold .billede {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100%;
+}
+  
+.vinogmad-indhold .billede img {
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
 
 /*vin-kort*/
 .vinsektion {
@@ -152,8 +240,11 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
 }
-  
 
+.vin-kort a{
+    text-decoration: none;
+    color: black;
+}
   
 .vin-billede {
     padding: 10px;
@@ -232,6 +323,10 @@
     max-width: 300px;
   }
 
+  .fakta-boks .knap:hover{
+    background-color:#D9D2C3;
+  }
+
   .fakta-boks:nth-child(2) {
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -250,6 +345,45 @@
     line-height: 1.6;
     padding-top: 10px;
   }
+
+/*vinprofil*/
+.vinprofil-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+  
+.vinprofil {
+    width: 300px;
+    text-align: center;
+    border: 1px solid #aaa;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    background-color:#D9D2C3 ;
+}
+
+  
+.vinprofil-billede {
+    padding: 30px;
+}
+  
+.vinprofil-billede img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 200px;
+}
+  
+.vinprofil-info h4 {
+    margin: 15px 0 5px 0;
+}
+
+.vinprofil-info p{
+    padding: 10px 20px 10px 20px;
+}
 
 /*galleri*/
 .billedgalleri {
@@ -412,6 +546,68 @@
     margin: 50px 20px;
 }
 
+/*Vin og mad fifty-fifty venstre mobil*/
+.vinogmad-indhold-venstre {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 10px 20px;
+}
+    
+.vinogmad-indhold-venstre .billede {
+    order: 1;
+    width: 100%;
+}
+    
+ .vinogmad-indhold-venstre .billede img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: none;
+}
+    
+.vinogmad-indhold-venstre .tekst-hojre {
+    order: 2;
+    padding: 0;
+    width: 100%;
+}
+    
+.vinogmad-venstre {
+    padding: 20px;
+    margin: 50px 20px;
+}
+
+/* Vin og mad fifty-fifty mobil*/
+.vinogmad-indhold {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 10px 20px;
+}
+    
+.vinogmad-indhold .billede {
+    order: 1;
+    width: 100%;
+}
+    
+ .vinogmad-indhold .billede img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: none;
+}
+    
+.vinogmad-indhold .tekst {
+    order: 2;
+    padding: 0;
+    width: 100%;
+}
+    
+.vinogmad {
+    padding: 20px;
+    margin: 50px 20px;
+}
+
 /*vin-kort mobil*/
 
 .vinsektion-top{
@@ -421,7 +617,7 @@
 .vin-kort-wrapper {
     gap: 40px 20px;
     justify-content: center;
-    padding: 10px 10px;
+    padding: 50px 10px 10px 10px;
     margin-top: 30px;
 }
     
@@ -482,6 +678,22 @@
     height: auto;
     scroll-snap-align: center;
   }
+
+  /*vinprofil*/
+.vinprofil-wrapper {
+    flex-direction: column;
+    align-items: center;
+}
+
+.tekst .knap:hover{
+    background-color: #FBFAF7;
+}
+
+.tekst-hojre .knap:hover{
+    background-color: #FBFAF7;
+}
+
+
 /*galleri mobil*/
 .galleri-wrapper {
     flex-wrap: nowrap;
@@ -531,5 +743,10 @@
     padding: 0 20px;
 }
 
+/*spacer*/
+.spacer{
+width: 100%;
+display: block
+}
 
 }
