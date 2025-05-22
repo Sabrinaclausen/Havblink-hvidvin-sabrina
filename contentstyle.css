@@ -100,7 +100,7 @@
   }
   
   .vinpunkt::before {
-    content: "🍇"; /* eller brug fx ✓, ✦, ➤ – alt efter stil */
+    content: "✧"; /* eller brug fx ✓, ✦, ➤ – alt efter stil */
     position: absolute;
     left: 0;
     top: 0;
