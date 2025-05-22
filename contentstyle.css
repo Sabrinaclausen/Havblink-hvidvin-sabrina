@@ -255,6 +255,12 @@
     height: auto;
     object-fit: contain;
 }
+
+#allevin{
+    display: block;
+    margin: 0 auto;
+    max-height: 550px;
+}
   
 .vin-info {
     padding: 10px 0;
@@ -638,6 +644,10 @@
 
 .vin-billede a{
     text-decoration: none;
+}
+
+#allevin{
+padding-top: 50px;
 }
 
   /*banner billede mobil*/
