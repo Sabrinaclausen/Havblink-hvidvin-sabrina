@@ -379,6 +379,10 @@
     object-fit: contain;
     max-height: 200px;
 }
+
+.vinprofil a{
+    text-decoration: none;
+}
   
 .vinprofil-info h4 {
     margin: 15px 0 5px 0;
