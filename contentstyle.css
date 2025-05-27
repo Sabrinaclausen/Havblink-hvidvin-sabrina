@@ -324,9 +324,6 @@
     flex: 1;
     max-width: 300px;
     border: none;
-    padding: 30px 20px;
-    flex: 1;
-    max-width: 300px;
   }
 
   .fakta-boks .knap:hover{
@@ -460,7 +457,16 @@
     margin: 60px auto;
     padding: 20px 20px 50px 20px;
   }
-  
+
+  .tekstbokse-en {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0px 20px 0px 20px;
+  }
+
   .tekstboks {
     flex: 1;
   }
@@ -486,6 +492,11 @@
     max-width: 1000px;
     margin: 0 auto;
   }
+
+/*vinetikette*/
+#vinetikette-mobil{
+  display: none;
+}
 
   /* Mobil side */
 @media screen and (max-width: 430px) {
@@ -674,6 +685,9 @@ padding-top: 50px;
     border-left: none;
     border-right: none;
   }
+  
+
+  /*galleri mobil*/
   .galleri-wrapper {
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -748,9 +762,25 @@ padding-top: 50px;
     padding: 0 50px;
 }
 
+.tekstbokse-en{
+  flex-direction: column;
+  padding: 0 50px;
+}
+
 /* brun bjælke */
 .baelke-indhold {
     padding: 0 20px;
+}
+
+/*vinetikette mobil*/
+#vinetikette{
+  display: none;
+}
+
+#vinetikette-mobil{
+  display: block;
+  max-height: 550px;
+  padding-top: 50px;
 }
 
 /*spacer*/
