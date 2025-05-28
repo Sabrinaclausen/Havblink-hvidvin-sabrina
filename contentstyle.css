@@ -256,11 +256,6 @@
     object-fit: contain;
 }
 
-#allevin{
-    display: block;
-    margin: 0 auto;
-    max-height: 550px;
-}
   
 .vin-info {
     padding: 10px 0;
@@ -292,6 +287,12 @@
     background-color: #D9D2C3 !important;
     transform: scale(1.05);
   }
+
+  #allevin{
+    display: block;
+    margin: 0 auto;
+    max-height: 550px;
+}
 
 
   /* banner billede */
