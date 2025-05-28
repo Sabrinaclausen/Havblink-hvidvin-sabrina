@@ -533,7 +533,38 @@ textarea {
   margin-bottom: 30px;
 }
 
+/*map*/
+.map {
+  padding: 20px;
+  text-align: center;
+}
 
+/* populær sider*/
+.popular {
+  padding: 20px;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.popular-side-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.popular-side img {
+  max-width: 150px;
+  padding: 5px;
+}
+
+.popular-side a{
+  text-decoration: none;
+}
+
+.popular h2 {
+  padding-bottom: 20px;
+}
 
   /* Mobil side */
 @media screen and (max-width: 430px) {
@@ -825,6 +856,22 @@ padding-top: 50px;
 .spacer{
 width: 100%;
 display: block
+}
+
+/* Kontaktformular */
+.kontakt-form {
+  margin: 50px 20px;
+}
+
+.map{
+  display: flex;
+padding: 20px;
+padding-bottom: 70px;
+}
+
+/* populær sider*/
+.popular {
+display: none;
 }
 
 }
