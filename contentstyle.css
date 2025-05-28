@@ -503,6 +503,38 @@
   display: none;
 }
 
+/* Kontaktformular */
+.kontakt-form {
+  background-color: #D9D2C3;
+  padding: 2em;
+  text-align: center;
+  margin: 50px 70px; 
+}
+
+.kontakt-form form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.kontakt-form input, .kontakt-form textarea {
+  margin: 10px 0;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.kontakt-form {
+  padding-top: 50px;
+}
+
+textarea {
+  height: 150px; 
+  margin-bottom: 30px;
+}
+
+
+
   /* Mobil side */
 @media screen and (max-width: 430px) {
     
