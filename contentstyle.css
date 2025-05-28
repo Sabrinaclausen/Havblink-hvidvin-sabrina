@@ -1,4 +1,4 @@
-/*fifty-fifty section*/
+/*fifty-fifty sektion*/
 .fifty-fifty {
     background-color: #fefefe;
     padding: 60px 20px 60px 100px;
@@ -86,21 +86,21 @@
     margin-bottom: 20px;
   }
   
-  .fifty-fifty-indhold-venstre .tekst-hojre p {
+.fifty-fifty-indhold-venstre .tekst-hojre p {
     line-height: 1.6;
     margin-bottom: 20px;
     padding-right: 20px;
-  }
+}
 
 /*vindruer*/
 
   .vinpunkt {
     position: relative;
-    padding-left: 30px; /* plads til ikonet */
+    padding-left: 30px; 
   }
   
   .vinpunkt::before {
-    content: "✧"; /* eller brug fx ✓, ✦, ➤ – alt efter stil */
+    content: "✧"; 
     position: absolute;
     left: 0;
     top: 0;
@@ -153,7 +153,7 @@
     padding-right: 20px;
   }
 
-/* Vin og mad fifty-fifty section*/
+/* Vin og mad fifty-fifty sektion*/
 .vinogmad {
     padding: 10px 20px 10px 100px;
     margin: 10px 60px 10px 60px;
@@ -533,7 +533,7 @@ textarea {
   margin-bottom: 30px;
 }
 
-/*map*/
+/*kort*/
 .map {
   padding: 20px;
   text-align: center;
@@ -600,7 +600,7 @@ textarea {
     margin: 100px 20px;
 }
 
-/*fifty-fifty venstre section mobil*/
+/*fifty-fifty venstre sektion mobil*/
 .fifty-fifty-indhold-venstre {
     flex-direction: column;
     align-items: center;
@@ -863,6 +863,7 @@ display: block
   margin: 50px 20px;
 }
 
+/*kort mobil */
 .map{
   display: flex;
 padding: 20px;

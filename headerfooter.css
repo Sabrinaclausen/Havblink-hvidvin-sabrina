@@ -108,8 +108,8 @@ header{
   
 .hero-tekst {
     position: absolute;
-    bottom: 50px;  /* flyt op/ned */
-    left: 50px;    /* flyt til venstre/højre */
+    bottom: 50px;  
+    left: 50px;    
     color: white;
     z-index: 10;
     max-width: 600px;
